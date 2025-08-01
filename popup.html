@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Load Performance</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Page Load Performance</h1>
+    <div class="result-container">
+      <div id="loading" class="hidden">Measuring page load time...</div>
+      <div id="result" class="hidden">
+        <h2>Results</h2>
+        <div class="metric">
+          <span>Load Time:</span>
+          <span id="loadTime">-</span>
+        </div>
+      </div>
+      <div id="error" class="hidden">
+        <p>An error occurred while measuring page load time.</p>
+      </div>
+    </div>
+    <button id="measureBtn" class="measure-btn" aria-label="Measure page load time">
+      Measure Performance
+    </button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
